@@ -6,3 +6,8 @@ git commit -m ''  --提交暂存区内容
 git log --pretty=oneline	--查看log日志，显示内容与hard位置有一定关联，后面参数为精简化日志
 git reflog		--所有操作记录
 
+git reset --hard 版本六位码		--还原到某个特定版本
+#
+git reset <file> git reset HEAD <file>
+git restore <file>  git restore --staged <file>
+#根据git版本不同，以提示为准，放弃缓存区的修改或撤销提交到缓存区
