@@ -5,3 +5,5 @@ Git has a mutable index called stage.
 
 
 主分支修改代码
+
+主分支修改BUG
