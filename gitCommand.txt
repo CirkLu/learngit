@@ -5,9 +5,26 @@ git commit -m ''  --提交暂存区内容
 
 git log --pretty=oneline	--查看log日志，显示内容与hard位置有一定关联，后面参数为精简化日志
 git reflog		--所有操作记录
+log显示相关可拼接其他参数
+如
+-(n)	仅显示最近的 n 条提交
+--since, --after	仅显示指定时间之后的提交。
+--until, --before	仅显示指定时间之前的提交。
+--author	仅显示指定作者相关的提交。
+--committer	仅显示指定提交者相关的提交。
 
 git reset --hard 版本六位码		--还原到某个特定版本
 #
 git reset <file> git reset HEAD <file>
-git restore <file>  git restore --staged <file>
+git restore <file>  git restore --staged <file>		--2.23版本+
 #根据git版本不同，以提示为准，放弃缓存区的修改或撤销提交到缓存区
+
+git checkout -b [分支名]	--从某个分支上切出一个新分支
+git branch 	--查看分支
+git branch -d [分支名]		--删除分支
+
+git merge [分支名]		--将某个分支合并至当前分支
+
+git switch [-c] [分支名] 	--2.23版本+	切换分支，更易理解，等同于git checkout ,[-c] 等同于checkout的[-b]
+
+git --no-pager log --graph	--显示分支树 [--no-pager]为不分页
