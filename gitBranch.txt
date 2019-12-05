@@ -1,0 +1,12 @@
+git stash	--保存一个快照，不提交，方便切换分支进行紧急修改
+
+切出一个新分支修复BUG，修复完成后合并并删除
+
+git stash list	--查看快照记录
+git stash apply --恢复但不删除快照，后接参数可恢复指定的stash
+git stash pop	--恢复且删除快照
+git stash drop	--删除快照
+
+git cherry-pick	[版本六位码]	--复制一个特定的提交到当前分支
+
+git branch -D [分支名]	--强制销毁未合并的测试性功能分支
