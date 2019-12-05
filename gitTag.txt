@@ -1,0 +1,13 @@
+Git的TAG指向某个提交，即指向某次提交的指针
+本质也是一个快照
+TAG就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。
+
+git tag <name> 在本次提交上打标签
+git tag 查看所有标签
+git tag <name> <提交ID>	在指定提交上打标签
+git show <name> 查看标签信息
+
+标签的显示是以字母排序
+
+git tag -a[指定标签名] <name> -m[说明文字] <txt> <提交ID>
+
